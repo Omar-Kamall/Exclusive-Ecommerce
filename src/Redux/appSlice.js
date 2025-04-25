@@ -35,7 +35,7 @@ export const appSlice = createSlice({
             const item = state.products.find((item) => item.id === action.payload.id);
             if(item && item.quantity != 1)
                 item.quantity--;
-            if(item && item.quantity == 1)
+            else if(item && item.quantity == 1)
             {
                 const index = state.products.findIndex( index => index.id === action.payload.id);
                 state.products.splice(index , 1);
