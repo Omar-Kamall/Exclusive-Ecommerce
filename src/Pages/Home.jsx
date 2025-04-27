@@ -12,7 +12,7 @@ const Notfound = lazy(() => import ("./Notfound"));
 const Home = () => {
     return (
         <section className='pt-15! pb-20! loading'>
-            <Suspense fallback={<Notfound/>}>
+            <Suspense>
                 <Banel />
                 <Sales />
                 <Category />
