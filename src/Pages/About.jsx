@@ -8,7 +8,7 @@ const Notfound =lazy(() => import ("./Notfound"));
 const About = () => {
     return (
         <section className='py-20! loading'>
-            <Suspense fallback={<Notfound/>}>
+            <Suspense>
                 <OurStory/>
                 <Stats/>
                 <Team/>
